@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="client.css">
+    <link rel="stylesheet" href="achat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Client Page</title>
+    <title>Achat</title>
 </head>
 <body>
 
@@ -17,17 +17,17 @@
         </div>
         <div class="panier">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span id="lepanier">0</span>
+            <span>0</span>
         </div>
     </header>
 
     <div class="container">
         <div class="sideBar">
             <ul>
-                <li><a href="client.css"><i class="fa-solid fa-list"></i>Produits</a></li>
+                <li><a href="../clients/client.html"><i class="fa-solid fa-list"></i>Produits</a></li>
                 <li><a href="../panier/panier.html"><i class="fa-solid fa-cart-shopping"></i>Paniers</a></li>
-                <li><a href="../achat/achat.html"><i class="fa-solid fa-list-check"></i>Achats</a></li>
-                <li><a href="../clients/client.html"><i class="fa-solid fa-gear"></i>Parametres</a></li>
+                <li><a href="achat.html"><i class="fa-solid fa-list-check"></i>Achats</a></li>
+                <li><a href="../parametres/parametres.html"><i class="fa-solid fa-gear"></i>Parametres</a></li>
             </ul>
 
             <div class="profil">
@@ -41,23 +41,29 @@
             </div>
         </div>
         <div class="contenu">
-            <h1>Produits</h1>
-            <div class="lesProduits">
-                <!-- <div class="produits">
-                    <div class="image">
-                        <img src="" alt="">
+            <h1>Achat</h1>
+            <div class="lAchat">
+                <div class="achat">
+                    <div class="elementachat">
+                        <ul>
+                            <li>
+                                <span class="leProduit"><u>Produit</u>:  - </span>
+                                <span class="leprix"><u>Prix</u> :  - </span>
+                                <span class="laquantité"><u>Quantité</u> :  - </span>
+                                <span class="saTotal"><u>Total</u> :  </span>
+                            </li>
+                        </ul>
+                        <i class="fa-solid fa-check"></i>
                     </div>
-                    <div class="nomPrix">
-                        <h4>Nom Produit</h4>
-                        <h5 class="prix">Prix: <span class="leprix">2000</span><span>fr</span></h5>
+                    <div class="montotal">
+                        <p>Total : </p>
+                        <p> <span class="leprix">2000</span><span>fr</span></p>
                     </div>
-                    <button><i class="fa-solid fa-plus"></i><span>Ajouter</span></button>
-                </div> -->
-
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="client.js"></script>
+    <script src="achat.js"></script>
 </body>
 </html>

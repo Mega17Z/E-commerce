@@ -212,91 +212,143 @@ header .panier span{
     border-bottom: 1px solid rgb(0, 4, 58);
 }
 
-.contenu .lesProduits{
+.contenu .lePanier{
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
     gap: 20px;
+    /* background-color: aquamarine; */
+    padding: 10px 15px;
 }
 
-
-.lesProduits .produits{
-    padding: 10px;
-    min-width: 250px;
-    height: 55vh;
-    box-shadow: 0 0 5px rgb(0, 4, 58, 0.3);
-}
-
-.produits .image{
+.lePanier .panier{
     width: 100%;
-    height: 30vh;
-    background-color: rgb(0, 4, 58, 0.1);
     display: flex;
+    padding: 10px;
+    /* background-color: brown; */
     align-items: center;
-    justify-content: center;
+    background-color: rgb(0, 4, 58, 0.1);
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgb(0, 4, 58, 0.7);
 }
 
-.produits .image img{
-    width: 170px;
+.panier .bloc-info{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
 }
 
-.produits .nomPrix{
-    margin-top: 10px;
+.panier .panier-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(0, 4, 58);
+    position: relative;
+}
+
+.panier-image img{
+    position: absolute;
     width: 100%;
-    text-align: center;
+    height: 100%;
+    object-fit: cover;
 }
 
-.nomPrix h4{
-    font-size: 1rem;
+.panier-info h4{
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
-.nomPrix .prix{
+.panier-info .prix{
     font-size: 16px;
-    padding: 5px 0;
-    background-color: rgb(0, 4, 58);
-    color: white;
 }
 
-.nomPrix .prix span{
-    color: rgb(43, 251, 251);
+.panier-info span{
+    color: brown;
 }
 
-.nomPrix .prix .leprix{
-    margin-left: 15px;
+.panier-info .leprix{
+    color: brown;
 }
 
-.produits button{
-    margin-top: 15px;
-    border-radius: 25px;
-    outline: none;
-    border: none;
+.panier .Plusprix{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 6vh;
-    font-size: 16px;
-    gap: 10px;
-    background-color: rgb(0, 4, 58, 0.3);
-    color: rgb(0, 4, 58);
-    border: 2px solid rgb(0, 4, 58);
-    transition: all .5s ease;
+    gap: 20px;
+}
+
+.Plusprix .NonmbrePlus{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.NonmbrePlus i{
+    padding: 4px;
+    background-color: rgb(0, 4, 58);
+    color: rgb(43, 251, 251);
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.produits button:hover{
-    color: white;
+.Plusprix .totalPrix{
     background-color: rgb(0, 4, 58);
+    width: max-content;
+    min-width: 80px;
+    height: 100%;
+    color: rgb(43, 251, 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.contenu .AllTotal{
+    position: fixed;
+    bottom: 10px;
+    width: calc(100% - 225px);
+    background-color: rgb(0, 4, 58);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AllTotal button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(43, 251, 251);
+    color: rgb(0, 4, 58);
+    outline: none;
+    border: none;
+    font-size: 16px;
 }
 
 @media (max-width: 700px){
     .container .contenu{
         width: calc(100% - 70px);
         left: 70px;
+    }
+
+    .contenu .lePanier{
+        padding: 5px 0;
+    }
+
+    .panier-info h4{
+        font-size: 1rem;
+    }
+    
+    .panier-info .prix{
+        font-size: 13px;
+    }
+
+    .Plusprix .NonmbrePlus{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contenu .AllTotal{
+        width: calc(100% - 100px);
     }
 }
