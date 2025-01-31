@@ -212,91 +212,79 @@ header .panier span{
     border-bottom: 1px solid rgb(0, 4, 58);
 }
 
-.contenu .lesProduits{
+.contenu .lAchat{
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
     gap: 20px;
+    /* background-color: aquamarine; */
+    padding: 10px 15px;
 }
 
-
-.lesProduits .produits{
+.lAchat .achat{
+    width: 100%;
+    /* display: flex; */
     padding: 10px;
-    min-width: 250px;
-    height: 55vh;
-    box-shadow: 0 0 5px rgb(0, 4, 58, 0.3);
-}
-
-.produits .image{
-    width: 100%;
-    height: 30vh;
+    /* background-color: brown; */
+    /* align-items: center; */
     background-color: rgb(0, 4, 58, 0.1);
+    /* justify-content: space-between; */
+    box-shadow: 0 2px 10px rgb(0, 4, 58, 0.7);
+}
+
+.achat ul{
+    padding: 10px 20px;
+}
+
+.achat ul li{
+    line-height: 25px;
+    font-size: 1.1rem;
+}
+
+.achat ul li u{
+    font-weight: 800;
+}
+
+.elementachat{
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.produits .image img{
-    width: 170px;
-}
-
-.produits .nomPrix{
-    margin-top: 10px;
     width: 100%;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nomPrix h4{
-    font-size: 1rem;
-    margin-bottom: 5px;
+.achat i{
+    font-size: 1.5rem;
 }
 
-.nomPrix .prix{
-    font-size: 16px;
-    padding: 5px 0;
+.montotal{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(0, 4, 58);
+}
+
+.montotal p{
     color: white;
 }
 
-.nomPrix .prix span{
+.montotal .leprix{
     color: rgb(43, 251, 251);
 }
 
-.nomPrix .prix .leprix{
-    margin-left: 15px;
-}
-
-.produits button{
-    margin-top: 15px;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 6vh;
-    font-size: 16px;
-    gap: 10px;
-    background-color: rgb(0, 4, 58, 0.3);
-    color: rgb(0, 4, 58);
-    border: 2px solid rgb(0, 4, 58);
-    transition: all .5s ease;
-    cursor: pointer;
-}
-
-.produits button:hover{
-    color: white;
-    background-color: rgb(0, 4, 58);
+.prixtotal .leprix{
+    font-weight: 700;
+    color: rgb(43, 251, 251);
 }
 
 @media (max-width: 700px){
     .container .contenu{
         width: calc(100% - 70px);
         left: 70px;
+    }
+
+    .contenu .lAchat{
+        padding: 5px 0;
     }
 }

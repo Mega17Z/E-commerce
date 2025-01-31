@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Panier</title>
+</head>
+<body>
+
+    <header>
+        <div class="h2">Logo</div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text">
+        </div>
+        <div class="panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="lepanier">0</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sideBar">
+            <ul>
+                <li><a href="../clients/client.html"><i class="fa-solid fa-list"></i>Produits</a></li>
+                <li><a href="panier.html"><i class="fa-solid fa-cart-shopping"></i>Paniers</a></li>
+                <li><a href="../achat/achat.html"><i class="fa-solid fa-list-check"></i>Achats</a></li>
+                <li><a href="../parametres/parametres.html"><i class="fa-solid fa-gear"></i>Parametres</a></li>
+            </ul>
+
+            <div class="profil">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="info">
+                    <h4>Nom de Compte</h4>
+                    <h6><a href="#">Deconnexion</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="contenu">
+            <h1>Panier</h1>
+            <div class="lePanier">
+                <!-- <div class="panier">
+                    <div class="bloc-info">
+                        <div class="panier-image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="panier-info">
+                            <h4>Nom du Produit</h4>
+                            <h5 class="prix">Prix: <span class="leprix">2000</span><span>fr</span></h5>
+                        </div>
+                    </div>
+                    <div class="Plusprix">
+                        <div class="NonmbrePlus">
+                            <i class="fa-solid fa-minus"></i>
+                            <p>0</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="totalPrix">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="AllTotal">
+                <p>Total</p>
+                <span>0</span>
+                <button>Valider</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="panier.js"></script>
+</body>
+</html>
