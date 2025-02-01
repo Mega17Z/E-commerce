@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ajout.css">
+    <link rel="stylesheet" href="produit.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Admin Page</title>
+    <title>Client Page</title>
 </head>
 <body>
 
@@ -25,9 +25,9 @@
         <div class="sideBar">
             <ul>
                 <li><a href="../admin/admin.html"><i class="fa-solid fa-user"></i>Admin</a></li>
-                <li><a href="../produit/produit.html"><i class="fa-solid fa-list"></i>Produits</a></li>
-                <li><a href="ajout.html"><i class="fa-solid fa-cart-shopping"></i>Ajout Produit</a></li>
-                <li><a href="../liste client/liste.html"><i class="fa-solid fa-list-check"></i>Listes Plients</a></li>
+                <li><a href="produit.html"><i class="fa-solid fa-list"></i>Produits</a></li>
+                <li><a href="../ajout produit/ajout.html"><i class="fa-solid fa-cart-shopping"></i>Ajout Produit</a></li>
+                <li><a href="../liste client/liste.html"><i class="fa-solid fa-list-check"></i>Listes Clients</a></li>
             </ul>
 
             <div class="profil">
@@ -41,29 +41,23 @@
             </div>
         </div>
         <div class="contenu">
-            <h1>Ajouter un Produit</h1>
-            <div class="Ajout-Produit">
-                <form action="">
-                    <div class="bloc">
-                        <label for="nom">Nom du Produit</label>
-                        <input type="text" id="nom">
-                    </div>
-                    <div class="bloc">
-                        <label for="prix">Prix</label>
-                        <input type="text" id="prix">
-                    </div>
-                    <div class="bloc">
-                        <label for="">Image</label>
-                        <label for="imageInput" class="buttonAjout">Ajouter <i class="fa-solid fa-circle-plus"></i></label>
-                        <input type="file" id="imageInput" accept="image/*">
+            <h1>Produits</h1>
+            <div class="lesProduits">
+                <!-- <div class="produits">
+                    <div class="image">
                         <img src="" alt="">
                     </div>
-                    <button type="submit" id="enregistrer">Enregister</button>
-                </form>
+                    <div class="nomPrix">
+                        <h4>Nom Produit</h4>
+                        <h5 class="prix">Prix: <span class="leprix">2000</span><span>fr</span></h5>
+                    </div>
+                    <button><i class="fa-solid fa-plus"></i><span>Ajouter</span></button>
+                </div> -->
+
             </div>
         </div>
     </div>
 
-    <script src="client.js"></script>
+    <script src="produit.js"></script>
 </body>
 </html>
