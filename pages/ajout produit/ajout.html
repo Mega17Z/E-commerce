@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Page</title>
+</head>
+<body>
+
+    <header>
+        <div class="h2">Logo</div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text">
+        </div>
+        <div class="panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="lepanier">0</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sideBar">
+            <ul>
+                <li><a href="../clients/client.html"><i class="fa-solid fa-list"></i>Produits</a></li>
+                <li><a href="ajout.html"><i class="fa-solid fa-cart-shopping"></i>Ajout produit</a></li>
+                <li><a href="../achat/achat.html"><i class="fa-solid fa-list-check"></i>Listes clients</a></li>
+                <li><a href="../parametres/parametres.html"><i class="fa-solid fa-gear"></i>Parametres</a></li>
+            </ul>
+
+            <div class="profil">
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="info">
+                    <h4>Nom de Compte</h4>
+                    <h6><a href="#">Deconnexion</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="contenu">
+            <h1>Ajouter un Produit</h1>
+            <div class="Ajout-Produit">
+                <form action="">
+                    <div class="bloc">
+                        <label for="nom">Nom du Produit</label>
+                        <input type="text" id="nom">
+                    </div>
+                    <div class="bloc">
+                        <label for="prix">Prix</label>
+                        <input type="text" id="prix">
+                    </div>
+                    <div class="bloc">
+                        <label for="imageInput">image</label>
+                        <input type="file" id="imageInput" accept="image/*">
+                        <img src="" alt="">
+                    </div>
+                    <button type="submit" id="enregistrer">Enregister</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
