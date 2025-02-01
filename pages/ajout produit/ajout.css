@@ -215,12 +215,80 @@ header .panier span{
 .contenu .Ajout-Produit{
     display: flex;
     /* align-items: center; */
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding: 5px;
+    /* flex-wrap: wrap; */
     width: 100%;
     min-height: 100vh;
     gap: 20px;
+}
+
+.Ajout-Produit form{
+    width: 100%;
+}
+
+.Ajout-Produit form .bloc{
+    width: 100%;
+    padding: 5px;
+    /* border: 1px solid; */
+    margin-bottom: 10px;
+}
+
+form .bloc label{
+    display: block;
+    font-size: 17px;
+    color: rgb(0, 4, 58);
+}
+
+form .bloc input{
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(0, 4, 58);
+    border: 1px solid rgb(0, 4, 58);
+    outline: none;
+    margin-top: 5px;
+    /* color: rgb(0, 4, 58); */
+    border-radius: 0;
+}
+
+
+form .bloc input[type="file"]{
+    display: none;
+}
+
+.buttonAjout{
+    background-color: rgb(0, 4, 58);
+    color: rgb(43, 251, 251) !important;
+    width: 100px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    justify-content: center;
+}
+
+.bloc img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 4, 58);
+    margin-top: 10px;
+    object-fit: cover;
+    background-position: center;
+}
+
+form button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(0, 4, 58);
+    outline: none;
+    border: none;
+    color: rgb(43, 251, 251);
+    /* text-align: center; */
 }
 
 
