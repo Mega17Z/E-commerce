@@ -212,37 +212,86 @@ header .panier span{
     border-bottom: 1px solid rgb(0, 4, 58);
 }
 
-.contenu .Params{
+.contenu .lesProduits{
     display: flex;
-    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     gap: 20px;
-    /* background-color: aquamarine; */
-    padding: 10px 15px;
-    justify-content: space-between;
 }
 
-.infoparamas .bloc-params{
-    margin-top: 20px;
-    padding-bottom: 2px;
-    border-bottom: 1px solid rgb(0, 4, 58);
+
+.lesProduits .produits{
+    padding: 10px;
+    min-width: 250px;
+    height: 55vh;
+    box-shadow: 0 0 5px rgb(0, 4, 58, 0.3);
 }
 
-.bloc-params h4{
+.produits .image{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(0, 4, 58, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produits .image img{
+    width: 170px;
+}
+
+.produits .nomPrix{
     margin-top: 10px;
-    color: rgb(0, 4, 58);
+    width: 100%;
+    text-align: center;
 }
 
-.bloc-params h6{
-    padding: 5px;
+.nomPrix h4{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.nomPrix .prix{
+    font-size: 16px;
+    padding: 5px 0;
     background-color: rgb(0, 4, 58);
-    color: rgb(43, 251, 251);
-    width: max-content;
+    color: white;
 }
 
-.Params a{
+.nomPrix .prix span{
+    color: rgb(43, 251, 251);
+}
+
+.nomPrix .prix .leprix{
+    margin-left: 15px;
+}
+
+.produits button{
+    margin-top: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vh;
+    font-size: 16px;
+    gap: 10px;
+    background-color: rgb(0, 4, 58, 0.3);
     color: rgb(0, 4, 58);
+    border: 2px solid rgb(0, 4, 58);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.produits button:hover{
+    color: white;
+    background-color: rgb(0, 4, 58);
 }
 
 @media (max-width: 700px){
