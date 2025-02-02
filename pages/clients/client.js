@@ -1,20 +1,4 @@
-const tabData = [
-    {
-        image: '1.png',
-        name: 'Machine',
-        prix: 120000
-    },
-    {
-        image: '2.png',
-        name: 'Tablette',
-        prix: 70000
-    },
-    {
-        image: '3.png',
-        name: 'Casque',
-        prix: 10000
-    }
-]
+const tabData = JSON.parse(localStorage.getItem('Les Produits')) || []
 
 
 const lesProduits = document.querySelector('.lesProduits')
