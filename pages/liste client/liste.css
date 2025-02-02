@@ -243,7 +243,7 @@ header .panier span{
 
 .ajout-client .bloc button{
     padding: 5px;
-    width: 10%;
+    width: 100px;
     margin: auto;
     font-size: 17px;
     cursor: pointer;
