@@ -8,6 +8,7 @@ const conteneur = document.querySelector('.clients')
 const tabProfil = JSON.parse(localStorage.getItem('les utilisateurs')) || []
 
 
+
 ajout.addEventListener('click', () => {
     if(nom.value == "" || email.value == "" || motdePasse.value == ""){
         return
