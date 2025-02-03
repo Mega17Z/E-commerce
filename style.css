@@ -78,7 +78,15 @@ header ul li a:hover:before{
     display: flex;
     color: whitesmoke;
     align-items: center;
+    gap: 10px;
     justify-content: center;
+}
+
+.connect_afficher a{
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    font-size: 15px;
+    color: rgb(0, 4, 58);
 }
 
 .connect_afficher .fa-bars,
