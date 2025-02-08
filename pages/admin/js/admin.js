@@ -1,4 +1,4 @@
-// admin.js
+/* // admin.js
 
 // Données temporaires (simulées)
 let users = JSON.parse(localStorage.getItem('users')) || [];
@@ -357,3 +357,11 @@ loadUsers();
 loadProducts();
 loadCategories();
 loadClients();
+
+
+
+ */
+// Importer Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc, query, where } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+
